@@ -8,4 +8,5 @@ This is a image from a online source
 
 This is a image directly from the git repository
 
-![Image](applicationset1_motor_popup_001.png)
+![Image](sources/images/applicationset1_motor_popup_001.png)
+
