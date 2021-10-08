@@ -1,0 +1,386 @@
+/*************************************************************************************************/
+/* Debug Information for Embedded Help invisible because they are not needed in RELEASE */
+/* Anzeige als ID wenn auskommentiert */
+
+p.embeddedhelpdebug { display:none; } 
+
+/*************************************************************************************************/
+
+/* Display hint YouTube-Tutorials for COPA-DATA only
+/* Anzeige in Embedded Help wenn auskommentiert
+/*************************************************************************************************/
+
+/* p.hinttutorial { display:none; } 
+
+/*************************************************************************************************/
+
+* { margin: 0px; }
+
+html, body { 
+	position: absolute; top:0; left:0; right:0; bottom:0;
+	width: 100%; height: 100%; min-height: 100%; max-height: 100%;
+	border: 0px 0px 0px 0px;
+	overflow: hidden;
+	background : #ffffff;
+}
+
+
+* html body { /*IE6 hack*/
+	padding: 68px 0px 16px 0px; /* Set to (HeightOfHeaderDiv 0 HeightOfFooterDiv 0)*/
+}
+
+body.contents {
+	scrollbar-darkshadow-color: #9999DD; scrollbar-face-color: #EAEAFF; scrollbar-shadow-color: #CCCCFF;
+
+}
+
+body.tabs {
+	background: #CCCCFF;
+	background-image: url(toolbar_bg.jpg); background-repeat: repeat-x;
+}
+
+/*************************************************************************************************/
+h1.heading1 
+{
+	display:none;
+}
+.scrollbar {
+	background-color:#f0f0ee;
+}
+
+/* Div areas ??*/
+div.navigation {
+	border-top: 1px solid #ffffff;
+	border-bottom: 1px solid #ffffff;
+	background-color: #f0f0ee;
+	padding: 2px 0px 2px 4px;
+}
+
+h1 {
+	 margin: 0px;
+	 padding: 0px 12px;
+	 text-align: left;
+	 font-family: Arial; font-size: 16px; font-weight:bold;
+	 color: #ffffff;
+}
+
+/*Global table-color definition - each Row has alternating colors*/
+.bgcol_row0 { background-color:#001738; }
+.bgcol_row1 { background-color:#E2E2E3; }
+.bgcol_row2 { background-color:#F2F2F2; }
+
+/*  Standard Table formattings - reserved */
+.tbl-count th {
+	border-width: 0px 1px 0px 0px; 
+}
+
+th {
+	padding: 0px 5px 0px 5px;
+	border-width: 0px 0px 1px 0px; border-style: solid;
+}
+
+td {
+	padding: 0px 5px 0px 5px;
+	border-color: #FFFFFF;
+	font: normal 0.71em/1.5em Arial, sans-serif;
+	vertical-align: top;
+}
+
+/*Related topics - reserved*/
+.relatedtopics 	{ display: inline; }
+.relatedtopics1 	{ display: inline; }
+
+/* override margin for lists from AuthorIt stylesheet */
+ol.listnumber, ol.listnumber2, ul.listbullet, ul.listbullet2 {
+	margin-left: 25pt !important;
+}
+li.listnumber, li.listnumber2 {
+	margin-left: 0pt !important;
+}
+li.listbullet, li.listbullet2 {
+	margin-left: 0pt !important;
+	list-style: disc;
+}
+
+/************************************  HEADING SECTION ************************************************/
+
+/*General settings for heading area*/
+#chapterGeneral {
+	position:absolute; top: 0px; left: 0px;
+	width: 100%; height: 68px; overflow: hidden;
+	margin: 0px 0px 0px 0px;
+	text-align: center;
+}
+
+#chapterGeneral p b 		{ color:#001738; }
+
+
+
+/* Heading position*/
+table.chapterHeadline {
+	position: fixed; /* mozilla */
+	top: 0;
+	position: expression('absolute'); /* IE */
+	top: expression(document.body.scrollTop + this.offsetHeight - this.offsetHeight);
+	left: 0;
+	border-bottom: 1px solid #cfcfc7;
+	width: 100%; height: 70px;
+	overflow:hide;
+	border:none;
+	margin-bottom:13px;
+	background-position:right top; background-repeat:no-repeat;
+}
+
+table.chapterHeadline td {
+	color:#ffffff;
+	vertical-align:middle;
+	padding:8px 0px 0px 0px;
+}
+
+#chapterGeneral table.chapterHeadline 	{ background-image:url('h1_bg_general.gif'); background-color: #001738; }
+
+#chapterGeneral th 		{ background-color: #c9c9d4; color: #001738; border-color: #001738; }
+
+
+table.chapterHeadline td.breadcrumb p {
+	font-size: 0.68em; 
+	margin: 0px 0px 0px 12px;
+}
+
+table.chapterHeadline td.chapterNavigation {
+	border-top: 1px solid #ffffff;
+	border-bottom: 1px solid #ffffff;
+	background-color: #f0f0ee;
+	padding: 2px 12px 2px 12px;
+	color: #000000;
+	vertical-align: middle;
+	text-align: right;
+}
+
+table.chapterHeadline td.chapterNavigation a {
+	margin-right: 2px;
+	color: #7b7b7b;
+	font-size: 0.91em;
+	border: none;
+}
+
+table.chapterHeadline td.chapterNavigation a:link, table.chapterHeadline td.chapterNavigation a:visited {
+	color: #7b7b7b;
+}
+
+table.chapterHeadline td.chapterNavigation a img {
+	margin: 0px 5px -1px 0;
+	border: none; 
+	vertical-align: middle;
+	color: #f0f0ee;
+}
+
+/* breadcrumb */
+table.chapterHeadline td.breadcrumb {
+	margin-bottom:0px; padding: 0px 0px 0px 0px; 
+	font-size: 1em; 
+	line-height: 1em;
+}
+
+/* breadcrumbs hyperlinks */
+	table.chapterHeadline a:link, table.chapterHeadline a:visited {
+	color:#ffffff;
+}
+
+
+/************************************  CONTENT SECTION ************************************************/
+
+* html #contentGeneral  { /* IE6 hack for middle div*/
+	width: 100%; height: 100%; 
+}
+
+/*General settings for content area*/
+ #contentGeneral {
+	position: fixed !important; top: 68px; bottom: 16px; left: 0px; right: 0px; 
+	/*width: 100%;*/ overflow: auto;
+	margin: 0px 0px 0px 0px; padding: 12px 12px 12px 12px;
+	background: #FFFFFF;
+}
+
+
+#contentGeneral p.sectionheading1, #contentGeneral p.sectionheading2, #contentGeneral p.boxesheading, #contentGeneral p b {
+	color:#001738;
+}
+
+/* Colors for smallhint: Border around text*/
+#contentGeneral .smallhint 		{ border-color: #001738; }
+
+/* Color for 'see also' box heading*/
+#contentGeneral p.relatedheading 	{ background-color: #c9c9d4; color: #001738; }
+
+/* Color for Table Heading*/
+#contentGeneral p.tableheading 		{ color: #FFFFFF; border-color: #001738; }
+
+/* Color for Headline in Tables and for Inline expandable Jumps*/
+#contentGeneral tr.bgcol_row0, 	#contentGeneral th.expandinginline	{ background-color: #001738; }
+
+
+/* To ensure that the background color for non expanded text is not colored*/
+span.expandinginline { background-color: #FFFFFF; }
+
+/* Margins for tables: to ensure that they have margins to text above and below*/
+#contentGeneral table, 	{ 
+	margin: 10px 0px 10px 0px; 
+}
+
+/* Border Color for Table Heading frames*/
+#contentGeneral th 	{ border-color: #001738; }
+
+/**************************************** FOOTER *******************************/
+
+#footer {
+	position: absolute; top: auto; left: 0px; bottom: 0px;
+	width: 100%; height: 16px; overflow: hidden;
+	margin: 0px 0px 0px 0px;
+	border: 0px; border-right: 1px solid #EAEAEA;
+	font: 1em arial, sans-serif;
+	color: #000000;
+	text-align: left;
+}
+
+#footerTable {
+	position:static; top:0; left:0; right:0; bottom:0;
+	height:100%;
+	background: #EAEAEA;
+}
+
+/**************************************** LINK SETTINGS *******************************/
+
+/* Color for Jump links */
+a.jumptemplate:link, a.jumptemplate:hover 						{ color : #e84e0f; }
+a.jumptemplate:visited 											{ color : #b34215; }
+/* Color for Tutorial Video links */
+a.youtubeexternallinktemplate:link, a.youtubeexternallinktemplate:hover 	{ color : #e84e0f; }
+a.youtubeexternallinktemplate:visited 										{ color : #b34215; }
+/* Color for Popup Links - reserved*/
+a.popuponclicktemplate:link, a.popuponclicktemplate:hover 		{ color: #e84e0f; }
+a.popuponclicktemplate:visited 									{ color: #b34215; }
+/* Color for Expanding Block Links - reserved*/
+a.expandingblocktemplate:link, a.expandingblocktemplate:hover 	{ color: #e84e0f; }
+a.expandingblocktemplate:visited 								{ color: #b34215; }
+/* Color for Expanding Inline Links */
+a.expandinginlinetemplate:link, a.expandinginlinetemplate:hover 	{ color: #e84e0f; }
+a.expandinginlinetemplate:visited 									{ color: #b34215; }
+/* Color for 'see also' Links */
+a.additionaltopics:link, a.additionaltopics:hover 				{ color: #e84e0f; }
+a.additionaltopics:visited 										{ color: #b34215; }
+
+
+/* Author-it - Reserved*/
+a.topbutton, a.topbutton:visited {
+	padding: 4px;
+	border: 1px solid #ffffff;
+	background: #000152;
+	color: #333399;
+	font: 11px Verdana, sans-serif;
+	text-align: center;
+	text-decoration: none;
+	cursor: auto;
+}
+
+a.selectedtab:link, a.selectedtab:visited, a.selectedtab:hover{
+	margin: 0px; padding : 1px 8px 2px 8px;
+	border: 1px solid;
+	border-bottom-color: #9E9BD4; border-left-color: #9E9BD4; border-right-color: #9E9BD4; border-top-color: #9E9BD4;
+	background-color: #ffffff;
+	color : #000152;
+	font : 11px "MS Sans Serif", sans-serif;
+	text-align : center;
+	text-decoration : none;
+}
+
+a.tab:link, a.tab:visited, a.tab:hover{
+	margin: 0px; padding: 1px 8px 2px 8px;
+	border: 1px solid; border-bottom-style: none;
+	border-left-color: #FFFFFF; border-right-color: #9E9BD4; border-top-color: #FFFFFF;
+	color: #333399;
+	font: 11px "MS Sans Serif", sans-serif;
+	text-align : center;
+	text-decoration : none;
+}
+
+/**************************************** GLOSSARY LINK SETTINGS *******************************/
+
+a:link.glossaryLink, a:hover.glossaryLink { color: #12B6E3; }
+a:visited.glossaryLink { color: #8A8A8A; }
+
+#glossaryHighlight {
+	color: #D1042A;
+	background-color: #E6E6E6;
+}
+
+/**************************************** GLOSSARY LINK SETTINGS *******************************/
+
+.box-fastfact-footer {
+	background-image: url(fastfact_footer.jpg);
+	height: 14px;
+	padding-right: 10px;
+	text-align: right;
+	color: #FFFFFF;
+	font-size: 10px;
+	background-repeat: repeat-y;
+}
+
+/* Only for Plain HTML Help*/
+#tripane { margin: 1em 0px 0px 0px; padding: 0px 10px 0px 10px; }
+#tripane img { vertical-align : middle; }
+#tripane .heading1 {
+	padding-bottom: 1px;
+	border-bottom: none;
+	color: #333399;
+	font: bold 14px Verdana, serif;	
+}
+
+#tabs{
+	margin-top: 2px; padding-left: 3px;
+	border-bottom: 9px solid #9E9BD4;
+}
+
+
+/* Reserved formatings for Author-it*/  
+td.topleft, td.topright, td.bottomleft, td.bottomright {
+	font-family: "Verdana", verdana, arial, helvetica, sans-serif;
+	font-style: normal; font-variant: normal; font-weight: normal; font-size: 11px;
+	margin: 0px; padding: 4px 8px 5px 8px;
+	color: #000000;
+	background: #ffffff; background-image: url('toolbar_bg.jpg'); background-repeat: repeat-x;
+}
+td.topright { border-bottom: 0px solid #ffffff; border-right: 0px solid #ffffff; }
+td.topleft { border-bottom: 0px solid #ffffff; }
+td.bottomright { border-top: 1px solid #ffffff; border-right: 1px solid #ffffff; }
+td.bottomleft { border-top: 1px solid #ffffff; }
+
+a.toolbar:hover {
+	margin: 0px; padding: 3px 2px 0px 2px;
+	border: 1px solid #333399;
+	color: #333399;
+	text-decoration : none;
+}
+
+a.toolbar {
+	margin: 1px; padding: 0px 2px 0px 2px;
+	border: 0px;
+	color: #333399;
+	text-decoration: none;
+}
+
+span.toolbar {
+	color: #EAEAEA;
+	font-weight: bold;
+}
+
+img.toolbar {
+	margin: 0px 0px -3px 0px; padding: 0px;
+	position: relative; top: -3px; left: 0;
+    vertical-align: top;	
+}
+
+table.toolbar {
+	margin: 0px; padding: 0px;
+	border: none; border-collapse : collapse;
+}

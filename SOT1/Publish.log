@@ -1,0 +1,125 @@
+Publikation 'Motor_Details [fedece30-1062-4acd-99b3-e630099377a0] (281157)' nach COPA-DATA Smart Object HTML (223984) (Gestartet 12:14:27 PM)
+Loading variables (12:14:27 PM)
+Checking Release States (12:14:27 PM)
+Creating output folder
+Load book contents (12:14:27 PM)
+Load related groups (12:14:28 PM)
+Buch wird geladen (< 1 Sekunde)
+   Command Line: CD_Prepublish_HTML
+   Filename: \\copa-data.internal\Shares\DOKU\AuthorIT_11\Tools\CD_prepublish_HTML.exe
+   Arguments: "OEM=COPA-DATA;PATH=C:\Users\Anita.Perchermeier\Documents\SODU_Repo\Publishing AuthorIt\COPA-DATA Smart Object HTML\Motor_Details [fedece30-1062-4acd-99b3-e630099377a0]\EN;DB=AuthorIt\CD_Docu_10"
+   Process-id: 28940
+   Start time: 6/18/2021 12:14:34 PM
+   End time: 6/18/2021 12:14:40 PM
+   Exit code: 0
+Command Line - CD_Prepublish_HTML (11 Sekunde(n))
+Publikation wird vorbereitet (11 Sekunde(n))
+Start publishing content (12:14:40 PM)
+Dateinamen COPA-DATA Smart Object HTML werden bestimmt (< 1 Sekunde)
+Die Datei '', die in der HTML-Frameset-Eigenschaft des Buchs 'Motor_Details [fedece30-1062-4acd-99b3-e630099377a0]' definiert wurde, konnte nicht gefunden werden. Inhalte wurde nicht erstellt
+Inhaltsverzeichnis wird erstellt (< 1 Sekunde)
+Topic 'Motor' - 281149
+Topic 'Motor - Content' - 281150
+Topic 'Additional content' - 281152
+Topic 'Änderungshistorie' - 281151
+COPA-DATA Smart Object HTML Seiten werden erstellt (7 Sekunde(n))
+Datei 'applicationset1_motor_popup_001.png' - 280609
+Hyperlink 'HLP_SCREENTYPE_STANDARD~Link' (178866)
+Hyperlink 'HLP_SCREENTYPE_STANDARD~Link' (178866)
+Hyperlink 'Bild anlegen mit Bilderstellungsdialog' (170720)
+Hyperlink 'Bild anlegen mit Bilderstellungsdialog' - 170720 wurde entfernt, da er nicht im Inhaltsverzeichnis des Buchs gefunden wurde
+Datei 'applicationset1_motor_popup_002.png' - 280610
+Hyperlink 'HLP_SCREENTYPE_STANDARD~Link' (178866)
+Datei 'applicationset1_motor_popup_003.png' - 280611
+Hyperlink 'HLP_SCREENTYPE_MDI_EWT~Link' (178911)
+Hyperlink 'HLP_SCREENTYPE_MDI_EWT~Link' (178911)
+Hyperlink 'Bildtyp Erweiterter Trend ' (12820)
+Hyperlink 'Bildtyp Erweiterter Trend ' - 12820 wurde entfernt, da er nicht im Inhaltsverzeichnis des Buchs gefunden wurde
+Hyperlink 'HLP_SCREENTYPE_MDI_EWT~Link' (178911)
+Datei 'applicationset1_motor_popup_006.png' - 280614
+Hyperlink 'HLP_SCREENTYPE_STANDARD~Link' (178866)
+Datei 'applicationset1_motor_popup_007.png' - 280615
+Hyperlink 'HLP_SCREENTYPE_STANDARD~Link' (178866)
+Datei 'applicationset1_motor_symbol_001.png' - 280618
+Datei 'applicationset1_motor_symbol_002.png' - 280619
+Hyperlink 'HLP_FKT_SCRIPT_DIR~Link' (116257)
+Hyperlink 'HLP_FKT_SCRIPT_DIR~Link' (116257)
+Hyperlink 'H_Functions_Systemfunktionen_ScriptFunktionen_Scriptausfuehren' (21479)
+Hyperlink 'H_Functions_Systemfunktionen_ScriptFunktionen_Scriptausfuehren' - 21479 wurde entfernt, da er nicht im Inhaltsverzeichnis des Buchs gefunden wurde
+Hyperlink 'HLP_FKT_BILD_EIN~Link' (115654)
+Hyperlink 'HLP_FKT_BILD_EIN~Link' (115654)
+Hyperlink 'H_Functions_Systemfunktionen_BildFunktionen_' (21492)
+Hyperlink 'H_Functions_Systemfunktionen_BildFunktionen_' - 21492 wurde entfernt, da er nicht im Inhaltsverzeichnis des Buchs gefunden wurde
+Hyperlink 'HLP_FKT_VAR_SOLLWERT~Link' (116383)
+Hyperlink 'HLP_FKT_VAR_SOLLWERT~Link' (116383)
+Hyperlink 'H_Functions_Systemfunktionen_VariableFunktionen_Sollwertabsetzen' (21485)
+Hyperlink 'H_Functions_Systemfunktionen_VariableFunktionen_Sollwertabsetzen' - 21485 wurde entfernt, da er nicht im Inhaltsverzeichnis des Buchs gefunden wurde
+Hyperlink 'HLP_FKT_VAR_SOLLWERT~Link' (116383)
+Hyperlink 'HLP_FKT_VAR_SOLLWERT~Link' (116383)
+Hyperlink 'HLP_FKT_VAR_SOLLWERT~Link' (116383)
+Hyperlink 'HLP_FKT_VAR_SOLLWERT~Link' (116383)
+Hyperlink 'HLP_FKT_VAR_SOLLWERT~Link' (116383)
+Hyperlink 'HLP_FKT_VAR_SOLLWERT~Link' (116383)
+Hyperlink 'HLP_FKT_VAR_SOLLWERT~Link' (116383)
+Hyperlink 'HLP_FKT_VAR_SOLLWERT~Link' (116383)
+Hyperlink 'HLP_FKT_VAR_SOLLWERT~Link' (116383)
+Hyperlink 'HLP_FKT_VAR_SOLLWERT~Link' (116383)
+Hyperlink 'HLP_FKT_VAR_SOLLWERT~Link' (116383)
+Hyperlink 'HLP_FKT_VAR_SOLLWERT~Link' (116383)
+Hyperlinks und Grafiken werden hinzugefügt (4 Sekunde(n))
+Dateien werden konvertiert (< 1 Sekunde)
+Style-Sheet wird erstellt (< 1 Sekunde)
+Dieses Buch enthält 43 nicht lokalisierte Objekte.
+Style Objekt 'Related Heading' (111) nicht lokalisiert.
+Style Objekt 'Related Item' (115) nicht lokalisiert.
+Media Objekt 'General Section' (21617) nicht lokalisiert.
+Media Objekt 'Inhaltsverzeichnis Section' (37) nicht lokalisiert.
+Style Objekt 'Section Heading 2' (207) nicht lokalisiert.
+Style Objekt 'Body Text' (4) nicht lokalisiert.
+Style Objekt 'List Bullet 1' (13) nicht lokalisiert.
+Topic Objekt 'HLP_SCREENTYPE_STANDARD' (178865) nicht lokalisiert.
+Style Objekt 'Popup OnClick' (168) nicht lokalisiert.
+Topic Objekt 'HLP_SCREENTYPE_MDI_EWT' (178910) nicht lokalisiert.
+Style Objekt 'Section Heading 1' (206) nicht lokalisiert.
+Style Objekt 'Table Heading' (26) nicht lokalisiert.
+Style Objekt 'Table Body Text' (25) nicht lokalisiert.
+Style Objekt 'Internal Property ID' (260) nicht lokalisiert.
+Style Objekt 'Property (Do not translate)' (112931) nicht lokalisiert.
+Style Objekt 'Body Text (Do Not Translate)' (219) nicht lokalisiert.
+Style Objekt 'Property' (585) nicht lokalisiert.
+Style Objekt 'Product Name' (252145) nicht lokalisiert.
+Topic Objekt 'HLP_FKT_SCRIPT_DIR' (116256) nicht lokalisiert.
+Topic Objekt 'HLP_FKT_BILD_EIN' (115653) nicht lokalisiert.
+Topic Objekt 'HLP_FKT_VAR_SOLLWERT' (116382) nicht lokalisiert.
+Style Objekt 'Property Value / Object Name (Do Not Translate)' (28242) nicht lokalisiert.
+Style Objekt 'Breadcrumbs' (560) nicht lokalisiert.
+File Objekt 'applicationset1_motor_popup_001.png' (280609) nicht lokalisiert.
+File Objekt 'applicationset1_motor_popup_002.png' (280610) nicht lokalisiert.
+File Objekt 'applicationset1_motor_popup_003.png' (280611) nicht lokalisiert.
+File Objekt 'applicationset1_motor_popup_006.png' (280614) nicht lokalisiert.
+File Objekt 'applicationset1_motor_popup_007.png' (280615) nicht lokalisiert.
+File Objekt 'applicationset1_motor_symbol_001.png' (280618) nicht lokalisiert.
+File Objekt 'applicationset1_motor_symbol_002.png' (280619) nicht lokalisiert.
+Style Objekt 'Heading 1' (8) nicht lokalisiert.
+Style Objekt 'Heading 2' (9) nicht lokalisiert.
+Style Objekt 'Heading 3' (10) nicht lokalisiert.
+Style Objekt 'Heading 4' (86) nicht lokalisiert.
+Style Objekt 'Heading 5' (87) nicht lokalisiert.
+Style Objekt 'Heading 6' (88) nicht lokalisiert.
+Style Objekt 'Index A to Z' (146) nicht lokalisiert.
+Style Objekt 'Index Heading' (143) nicht lokalisiert.
+Style Objekt 'Index 1' (139) nicht lokalisiert.
+Style Objekt 'Index 2' (140) nicht lokalisiert.
+Style Objekt 'Index 3' (141) nicht lokalisiert.
+Style Objekt 'Index Link' (142) nicht lokalisiert.
+Style Objekt 'TOC' (27) nicht lokalisiert.
+Publikation wird nachbereitet
+   Command Line: CD_afterpublish_HTM
+   Filename: \\copa-data.internal\Shares\DOKU\AuthorIT_11\Tools\CD_afterpublish_HTML.exe
+   Arguments: "OEM=COPA-DATA;PATH=C:\Users\Anita.Perchermeier\Documents\SODU_Repo\Publishing AuthorIt\COPA-DATA Smart Object HTML\Motor_Details [fedece30-1062-4acd-99b3-e630099377a0]\EN"
+   Process-id: 35100
+   Start time: 6/18/2021 12:14:54 PM
+   End time: 6/18/2021 12:14:56 PM
+   Exit code: 0
+Command Line - CD_afterpublish_HTM (3 Sekunde(n))
+Publikation abgeschlossen (Abgeschlossen 12:14:56 PM)

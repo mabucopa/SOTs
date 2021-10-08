@@ -1,0 +1,842 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<!-- <title> Additional Content </title> -->
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="docsstylesheet.css">
+	<link rel="stylesheet" type="text/css" href="Var.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	
+	 
+
+	
+	
+
+</head>
+
+<body>
+
+<!-- begin Header -->
+<div id="chapterGeneral">
+	<table class="chapterHeadline" cellspacing="0" cellpadding="0" border="0">
+	<tr>
+	  <td>
+		<h1>Additional Content</h1>
+	  </td>
+	</tr> 
+	<tr>
+	  <td class="breadcrumb">
+	  <p class="breadcrumbs"><a class="breadcrumblink" href="281149.htm">Motor_Details</a><span class="breadcrumbactive"><span class="breadcrumbdelimiter"> &gt; </span>Additional Content</span></p>
+	  </td>
+	</tr>
+	<tr>
+	  <td class="chapterNavigation">
+	  <span style="float:left"><a href=" "><img src="arrow_prev.gif" alt="Previous chapter"></a><a href=" "><img src="arrow_next.gif" alt="Next chapter"></a></span>
+	  </td>
+	</tr>
+	</table>
+</div> <!--chapterGeneral-->
+<!-- end Header -->
+
+<div id="footer">
+<table id="footerTable" class="layout" width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td align="left">
+			<span class="id52"> 
+			
+			</span>
+		</td>
+	</tr>
+</table>
+</div>
+
+<div id="contentGeneral" name="content" class="clearfix">
+		
+<p class="sectionheading2">Variables</p>
+<table width="100%" border="0">
+<tr align="left" valign="top" class="bgcol_row0">
+<th width="21%"><p class="tableheading">Name</p>
+</th>
+<th width="17%"><p class="tableheading">IEC data type</p>
+</th>
+<th width="16%"><p class="tableheading">Driver</p>
+</th>
+<th width="46%"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top" class="bgcol_row1">
+<td width="21%"><p class="tablebodytext"><span class="property">Cmd_Reset</span></p>
+</td>
+<td width="17%"><p class="tablebodytext"><span class="propertyvalue/objectname">BOOL</span></p>
+</td>
+<td width="16%"><p class="tablebodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="tablebodytext">Command to reset State when in <span class="donottranslate">Error</span> state.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row2">
+<td width="21%"><p class="tablebodytext"><span class="property">Command_Manual</span></p>
+</td>
+<td width="17%"><p class="tablebodytext"><span class="propertyvalue/objectname">INT</span></p>
+</td>
+<td width="16%"><p class="tablebodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="tablebodytext">Command to start and stop the motor in manual mode and simulation (SOT internal use, not interchangeable).</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row1">
+<td width="21%"><p class="tablebodytext"><span class="property">Command_Automatic</span></p>
+</td>
+<td width="17%"><p class="tablebodytext"><span class="propertyvalue/objectname">INT</span></p>
+</td>
+<td width="16%"><p class="tablebodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="tablebodytext">Command to start and stop the motor in automatic mode.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row2">
+<td width="21%"><p class="tablebodytext"><span class="property">Enable_Motor</span></p>
+</td>
+<td width="17%"><p class="tablebodytext"><span class="propertyvalue/objectname">BOOL</span></p>
+</td>
+<td width="16%"><p class="tablebodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="tablebodytext">Output to enable the motor.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row1">
+<td width="21%"><p class="bodytext"><span class="property">Motor_Fault</span></p>
+</td>
+<td width="17%"><p class="tablebodytext"><span class="propertyvalue/objectname">BOOL</span></p>
+</td>
+<td width="16%"><p class="tablebodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="tablebodytext">Feedback from motor controller that motor has no fault.</p>
+<ul class="listbullet"><li class="listbullet">FALSE: Motor faulty</li><li class="listbullet">TRUE: Motor no fault (ready)</li></ul></td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row2">
+<td width="21%"><p class="bodytext"><span class="property">Start_Interlock</span></p>
+</td>
+<td width="17%"><p class="tablebodytext"><span class="propertyvalue/objectname">BOOL</span></p>
+</td>
+<td width="16%"><p class="tablebodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="tablebodytext">Start Interlock (Disabled while in Simulation Mode)</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row1">
+<td width="21%"><p class="bodytext"><span class="property">Error_Reason</span></p>
+</td>
+<td width="17%"><p class="tablebodytext"><span class="propertyvalue/objectname">INT</span></p>
+</td>
+<td width="16%"><p class="tablebodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="tablebodytext">Error Reason why state has changed to <span class="donottranslate">Error</span> state</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row2">
+<td width="21%"><p class="bodytext"><span class="property">Mode</span></p>
+</td>
+<td width="17%"><p class="tablebodytext"><span class="propertyvalue/objectname">INT</span></p>
+</td>
+<td width="16%"><p class="tablebodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="tablebodytext">Manual or automatic mode.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row1">
+<td width="21%"><p class="tablebodytext"><span class="property">Simulation</span></p>
+</td>
+<td width="17%"><p class="tablebodytext"><span class="propertyvalue/objectname">BOOL</span></p>
+</td>
+<td width="16%"><p class="tablebodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="tablebodytext">Simulation enabled or disabled.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row2">
+<td width="21%"><p class="tablebodytext"><span class="property">Simulation_Enable_Noise</span></p>
+</td>
+<td width="17%"><p class="tablebodytext"><span class="propertyvalue/objectname">BOOL</span></p>
+</td>
+<td width="16%"><p class="tablebodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="tablebodytext">Enables the simulation of some noise for actual values.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row1">
+<td width="21%"><p class="bodytext"><span class="property">State</span></p>
+</td>
+<td width="17%"><p class="tablebodytext"><span class="propertyvalue/objectname">INT</span></p>
+</td>
+<td width="16%"><p class="tablebodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="tablebodytext">Motor state</p>
+<ul class="listbullet"><li class="listbullet">1: Init</li><li class="listbullet">10: Off</li><li class="listbullet">20: Ramping Up</li><li class="listbullet">30: Ramping Down</li><li class="listbullet">40: Running</li><li class="listbullet">1000: Error</li></ul></td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row2">
+<td width="21%"><p class="tablebodytext"><span class="property">Manual_Speed_Set</span></p>
+</td>
+<td width="17%"><p class="tablebodytext"><span class="propertyvalue/objectname">REAL</span></p>
+</td>
+<td width="16%"><p class="tablebodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="tablebodytext">Speed setpoint in manual mode.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row1">
+<td width="21%"><p class="tablebodytext"><span class="property">Auto_Speed_Set</span></p>
+</td>
+<td width="17%"><p class="tablebodytext"><span class="propertyvalue/objectname">REAL</span></p>
+</td>
+<td width="16%"><p class="tablebodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="tablebodytext">Speed setpoint in automatic mode.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row2">
+<td width="21%"><p class="tablebodytext"><span class="property">Speed_Set_Max_Pos</span></p>
+</td>
+<td width="17%"><p class="tablebodytext"><span class="propertyvalue/objectname">REAL</span></p>
+</td>
+<td width="16%"><p class="tablebodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="tablebodytext">Speed setpoint limit in positive direction.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row1">
+<td width="21%"><p class="bodytext"><span class="property">Speed_Set_Max_Neg</span></p>
+</td>
+<td width="17%"><p class="tablebodytext"><span class="propertyvalue/objectname">REAL</span></p>
+</td>
+<td width="16%"><p class="tablebodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="tablebodytext">Speed setpoint limit in negative direction.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row2">
+<td width="21%"><p class="tablebodytext"><span class="property">Speed_Alarms_Delay_Set</span></p>
+</td>
+<td width="17%"><p class="tablebodytext"><span class="propertyvalue/objectname">REAL</span></p>
+</td>
+<td width="16%"><p class="tablebodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="tablebodytext">Alarm Delay Setpoint for Speed Deviation Alarms and Warnings.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row1">
+<td width="21%"><p class="tablebodytext"><span class="property">Speed_Alarm</span></p>
+</td>
+<td width="17%"><p class="tablebodytext"><span class="propertyvalue/objectname">INT</span></p>
+</td>
+<td width="16%"><p class="tablebodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="tablebodytext">Internal Variable for Alarmhandling.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row2">
+<td width="21%"><p class="tablebodytext"><span class="property">Enable_Speed_Ramping</span></p>
+</td>
+<td width="17%"><p class="tablebodytext"><span class="propertyvalue/objectname">REAL</span></p>
+</td>
+<td width="16%"><p class="tablebodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="tablebodytext">Enable the speed setpoint ramping functionality, if this is off ramped setpoint follows setpoint directly.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row1">
+<td width="21%"><p class="tablebodytext"><span class="property">Ramp_Up_Speed_Set</span></p>
+</td>
+<td width="17%"><p class="tablebodytext"><span class="propertyvalue/objectname">REAL</span></p>
+</td>
+<td width="16%"><p class="tablebodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="tablebodytext">Ramping speed for acceleration.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row2">
+<td width="21%"><p class="tablebodytext"><span class="property">Ramp_Down_Speed_Set</span></p>
+</td>
+<td width="17%"><p class="tablebodytext"><span class="propertyvalue/objectname">REAL</span></p>
+</td>
+<td width="16%"><p class="tablebodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="tablebodytext">Ramping speed for deceleration.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row1">
+<td width="21%"><p class="tablebodytext"><span class="property">Speed_Set_Ramped</span></p>
+</td>
+<td width="17%"><p class="tablebodytext"><span class="propertyvalue/objectname">REAL</span></p>
+</td>
+<td width="16%"><p class="tablebodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="tablebodytext">Ramped speed setpoint.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row2">
+<td width="21%"><p class="tablebodytext"><span class="property">Speed_Act</span></p>
+</td>
+<td width="17%"><p class="tablebodytext"><span class="propertyvalue/objectname">REAL</span></p>
+</td>
+<td width="16%"><p class="tablebodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="tablebodytext">Actual speed value (map this variable to a variable that holds the actual speed).</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row1">
+<td width="21%"><p class="bodytext"><span class="property">Speed_Deviation_Warning</span></p>
+</td>
+<td width="17%"><p class="tablebodytext"><span class="propertyvalue/objectname">REAL</span></p>
+</td>
+<td width="16%"><p class="tablebodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="bodytext">If the difference between ramped speed setpoint and actual speed is higher than this value a warning will be triggered.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row2">
+<td width="21%"><p class="tablebodytext"><span class="property">Speed_Deviation_Alarm</span></p>
+</td>
+<td width="17%"><p class="tablebodytext"><span class="propertyvalue/objectname">REAL</span></p>
+</td>
+<td width="16%"><p class="tablebodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="tablebodytext">If the difference beteween ramped speed setpoint and actual speed is higher than this value an alarm will be triggered.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row1">
+<td width="21%"><p class="tablebodytext"><span class="property">Enable_Speed_Alarms</span></p>
+</td>
+<td width="17%"><p class="tablebodytext"><span class="propertyvalue/objectname">BOOL</span></p>
+</td>
+<td width="16%"><p class="tablebodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="tablebodytext">Enable Speed Deviation Alarms and Warnings.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row2">
+<td width="21%"><p class="tablebodytext"><span class="property">Speed_Standstill</span></p>
+</td>
+<td width="17%"><p class="tablebodytext"><span class="propertyvalue/objectname">REAL</span></p>
+</td>
+<td width="16%"><p class="tablebodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="tablebodytext">When ramping down the actual speed value needs to be lower this value to consider motor as off.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row1">
+<td width="21%"><p class="tablebodytext"><span class="property">Enable_Current</span></p>
+</td>
+<td width="17%"><p class="tablebodytext"><span class="propertyvalue/objectname">BOOL</span></p>
+</td>
+<td width="16%"><p class="tablebodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="tablebodytext">Enables the electrical current measurement.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row2">
+<td width="21%"><p class="tablebodytext"><span class="property">Current_Act</span></p>
+</td>
+<td width="17%"><p class="tablebodytext"><span class="propertyvalue/objectname">REAL</span></p>
+</td>
+<td width="16%"><p class="tablebodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="bodytext">Actual value of electrical current.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row1">
+<td width="21%"><p class="bodytext"><span class="property">Current_Maximum_Warning</span></p>
+</td>
+<td width="17%"><p class="bodytext"><span class="propertyvalue/objectname">REAL</span></p>
+</td>
+<td width="16%"><p class="bodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="bodytext">Trigger level current maximum warning.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row2">
+<td width="21%"><p class="bodytext"><span class="property">Current_Maximum_Alarm</span></p>
+</td>
+<td width="17%"><p class="bodytext"><span class="propertyvalue/objectname">REAL</span></p>
+</td>
+<td width="16%"><p class="bodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="bodytext">Trigger level current maximum alarm.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row1">
+<td width="21%"><p class="bodytext"><span class="property">Current_Alarms_Delay_Set</span></p>
+</td>
+<td width="17%"><p class="bodytext"><span class="propertyvalue/objectname">REAL</span></p>
+</td>
+<td width="16%"><p class="bodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="bodytext">Alarm Delay Setpoint for Current Alarms and Warnings.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row2">
+<td width="21%"><p class="bodytext"><span class="property">Current_Alarm</span></p>
+</td>
+<td width="17%"><p class="bodytext"><span class="propertyvalue/objectname">INT</span></p>
+</td>
+<td width="16%"><p class="bodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="bodytext">Internal Variable for Alarmhandling.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row1">
+<td width="21%"><p class="bodytext"><span class="property">Enable_Current_Alarms</span></p>
+</td>
+<td width="17%"><p class="bodytext"><span class="propertyvalue/objectname">BOOL</span></p>
+</td>
+<td width="16%"><p class="bodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="bodytext">Enable Current Alarms and Warnings.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row2">
+<td width="21%"><p class="bodytext"><span class="property">Enable_Power</span></p>
+</td>
+<td width="17%"><p class="bodytext"><span class="propertyvalue/objectname">BOOL</span></p>
+</td>
+<td width="16%"><p class="bodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="bodytext">Enables the electrical power measurement.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row1">
+<td width="21%"><p class="bodytext"><span class="property">Power_Act</span></p>
+</td>
+<td width="17%"><p class="bodytext"><span class="propertyvalue/objectname">REAL</span></p>
+</td>
+<td width="16%"><p class="bodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="bodytext">Actual value of electrical power.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row2">
+<td width="21%"><p class="bodytext"><span class="property">Power_Maximum_Warning</span></p>
+</td>
+<td width="17%"><p class="bodytext"><span class="propertyvalue/objectname">REAL</span></p>
+</td>
+<td width="16%"><p class="bodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="bodytext">Trigger level power maximum warning.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row1">
+<td width="21%"><p class="bodytext"><span class="property">Power_Maximum_Alarm</span></p>
+</td>
+<td width="17%"><p class="bodytext"><span class="propertyvalue/objectname">REAL</span></p>
+</td>
+<td width="16%"><p class="bodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="bodytext">Trigger level power maximum alarm.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row2">
+<td width="21%"><p class="bodytext"><span class="property">Power_Alarms_Delay_Set</span></p>
+</td>
+<td width="17%"><p class="bodytext"><span class="propertyvalue/objectname">REAL</span></p>
+</td>
+<td width="16%"><p class="bodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="bodytext">Alarm Delay Setpoint for Power Alarms and Warnings.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row1">
+<td width="21%"><p class="bodytext"><span class="property">Power_Alarm</span></p>
+</td>
+<td width="17%"><p class="bodytext"><span class="propertyvalue/objectname">INT</span></p>
+</td>
+<td width="16%"><p class="bodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="bodytext">Internal Variable for Alarmhandling.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row2">
+<td width="21%"><p class="bodytext"><span class="property">Enable_Power_Alarms</span></p>
+</td>
+<td width="17%"><p class="bodytext"><span class="propertyvalue/objectname">BOOL</span></p>
+</td>
+<td width="16%"><p class="bodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="bodytext">Enable Power Alarms and Warnings.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row1">
+<td width="21%"><p class="bodytext"><span class="property">Enable_Torque</span></p>
+</td>
+<td width="17%"><p class="bodytext"><span class="propertyvalue/objectname">BOOL</span></p>
+</td>
+<td width="16%"><p class="bodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="bodytext">Enables the torque measurement.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row2">
+<td width="21%"><p class="bodytext"><span class="property">Torque_Act</span></p>
+</td>
+<td width="17%"><p class="bodytext"><span class="propertyvalue/objectname">REAL</span></p>
+</td>
+<td width="16%"><p class="bodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="bodytext">Actual value of torque.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row1">
+<td width="21%"><p class="bodytext"><span class="property">Torque_Maximum_Warning</span></p>
+</td>
+<td width="17%"><p class="bodytext"><span class="propertyvalue/objectname">REAL</span></p>
+</td>
+<td width="16%"><p class="bodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="bodytext">Trigger level torque maximum warning.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row2">
+<td width="21%"><p class="bodytext"><span class="property">Torque_Maximum_Alarm</span></p>
+</td>
+<td width="17%"><p class="bodytext"><span class="propertyvalue/objectname">REAL</span></p>
+</td>
+<td width="16%"><p class="bodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="bodytext">Trigger level torque maximum alarm.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row1">
+<td width="21%"><p class="bodytext"><span class="property">Torque_Alarms_Delay_Set</span></p>
+</td>
+<td width="17%"><p class="bodytext"><span class="propertyvalue/objectname">REAL</span></p>
+</td>
+<td width="16%"><p class="bodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="bodytext">Alarm Delay Setpoint for Torque Alarms and Warnings.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row2">
+<td width="21%"><p class="bodytext"><span class="property">Torque_Alarm</span></p>
+</td>
+<td width="17%"><p class="bodytext"><span class="propertyvalue/objectname">INT</span></p>
+</td>
+<td width="16%"><p class="bodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="bodytext">Internal Variable for Alarmhandling.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row1">
+<td width="21%"><p class="bodytext"><span class="property">Enable_Torque_Alarms</span></p>
+</td>
+<td width="17%"><p class="bodytext"><span class="propertyvalue/objectname">BOOL</span></p>
+</td>
+<td width="16%"><p class="bodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="bodytext">Enable Torque Alarms and Warnings.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row2">
+<td width="21%"><p class="bodytext"><span class="property">Motor_Running_Negative_Direction</span></p>
+</td>
+<td width="17%"><p class="bodytext"><span class="propertyvalue/objectname">BOOL</span></p>
+</td>
+<td width="16%"><p class="bodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="bodytext">Motor running direction (SO internal flag to show the correct bargraph).</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row1">
+<td width="21%"><p class="tablebodytext"><span class="property">ISA_Command_Start</span></p>
+</td>
+<td width="17%"><p class="tablebodytext"><span class="propertyvalue/objectname">BOOL</span></p>
+</td>
+<td width="16%"><p class="tablebodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="tablebodytext">ISA Command to start the motor.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row2">
+<td width="21%"><p class="tablebodytext"><span class="property">ISA_Command_Stop</span></p>
+</td>
+<td width="17%"><p class="tablebodytext"><span class="propertyvalue/objectname">BOOL</span></p>
+</td>
+<td width="16%"><p class="tablebodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="tablebodytext">ISA Command to stop the motor.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row1">
+<td width="21%"><p class="tablebodytext"><span class="property">Cnf_Show_Details</span></p>
+</td>
+<td width="17%"><p class="tablebodytext"><span class="propertyvalue/objectname">BOOL</span></p>
+</td>
+<td width="16%"><p class="tablebodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="tablebodytext">Display or hide label text next to the motor symbol. Map this Variable to *Show_Details of Variable created by reference of SOT Show_Details.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row2">
+<td width="21%"><p class="tablebodytext"><span class="property">Request_For_Selection_LoadParameter</span></p>
+</td>
+<td width="17%"><p class="tablebodytext"><span class="propertyvalue/objectname">BOOL</span></p>
+</td>
+<td width="16%"><p class="tablebodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="tablebodytext">Once this Variable is set a checkbox next to the symbol will be visible to select parameter loading.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row1">
+<td width="21%"><p class="tablebodytext"><span class="property">Select_To_LoadParameter</span></p>
+</td>
+<td width="17%"><p class="tablebodytext"><span class="propertyvalue/objectname">BOOL</span></p>
+</td>
+<td width="16%"><p class="tablebodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="tablebodytext">Parameter loading selected for this device.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row2">
+<td width="21%"><p class="tablebodytext"><span class="property">Running</span></p>
+</td>
+<td width="17%"><p class="tablebodytext"><span class="propertyvalue/objectname">BOOL</span></p>
+</td>
+<td width="16%"><p class="tablebodytext"><span class="property">Intern</span></p>
+</td>
+<td width="46%"><p class="tablebodytext">Internal Variable used for ALC.</p>
+</td>
+</tr>
+
+</table>
+
+<p class="sectionheading2">Reaction Matrix</p>
+<table width="100%" border="0">
+<tr align="left" valign="top" class="bgcol_row0">
+<th width="24%"><p class="tableheading">Name</p>
+</th>
+<th width="76%"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top" class="bgcol_row1">
+<td width="24%"><p class="tablebodytext"><span class="property">CD_Error_Reason</span></p>
+</td>
+<td width="76%"><p class="tablebodytext">Alarm Reason</p>
+<ul class="listbullet"><li class="listbullet">0: No Error</li><li class="listbullet">1000: Motor controller fault</li></ul></td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row2">
+<td width="24%"><p class="bodytext"><span class="property">CD_Speed_Deviation_Alarms</span></p>
+</td>
+<td width="76%"><ul class="listbullet"><li class="listbullet">0: No Alarm</li><li class="listbullet">10: Actual Speed Low Warning</li><li class="listbullet">20: Actual Speed Low Alarm</li><li class="listbullet">30: Actual Speed High Warning</li><li class="listbullet">40: Actual Speed High Alarm</li></ul></td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row1">
+<td width="24%"><p class="bodytext"><span class="property">CD_Current_Alarms</span></p>
+</td>
+<td width="76%"><ul class="listbullet"><li class="listbullet">0: No Alarm</li><li class="listbullet">10: Actual Current High Warning</li><li class="listbullet">20: Actual Current High Alarm</li></ul></td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row2">
+<td width="24%"><p class="bodytext"><span class="property">CD_Power_Alarms</span></p>
+</td>
+<td width="76%"><ul class="listbullet"><li class="listbullet">0: No Alarm</li><li class="listbullet">10: Actual Power High Warning</li><li class="listbullet">20: Actual Power High Alarm</li></ul></td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row1">
+<td width="24%"><p class="bodytext"><span class="property">CD_Torque_Alarms</span></p>
+</td>
+<td width="76%"><ul class="listbullet"><li class="listbullet">0: No Alarm</li><li class="listbullet">10: Actual Torque High Warning</li><li class="listbullet">20: Actual Torque High Alarm</li></ul></td>
+</tr>
+
+</table>
+
+<p class="sectionheading2">Drivers</p>
+<table width="100%" border="0">
+<tr align="left" valign="top" class="bgcol_row0">
+<th width="24%"><p class="tableheading">Drivers</p>
+</th>
+<th width="76%"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top" class="bgcol_row1">
+<td width="24%"><p class="tablebodytext"><span class="property">Intern</span></p>
+</td>
+<td width="76%"><p class="tablebodytext">Internal variables</p>
+</td>
+</tr>
+
+</table>
+
+<p class="sectionheading2">Functions</p>
+<table width="100%" border="0">
+<tr align="left" valign="top" class="bgcol_row0">
+<th width="25%"><p class="tableheading">Function</p>
+</th>
+<th width="36%"><p class="tableheading">zenon functions</p>
+</th>
+<th width="38%"><p class="tableheading">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top" class="bgcol_row1">
+<td width="25%"><p class="tablebodytext"><span class="property">CD_scriptExecute_popup_Supervisor</span></p>
+</td>
+<td width="36%"><p class="tablebodytext"><span class="property"><a id="h116257" class="popuponclicktemplate" href="javascript:void(0)" onclick="togglePopup('116257','h116257')" target="_self">Script: execute</a></span></p>
+<div id="d116257" class="popuponclick" style="display:none"><a href="javascript:hidePopup('116257')"><img src="close.gif" align="right" alt="Close" border="0"></a>Internal ID: Additional content<p class="bodytext">&nbsp;</p>
+<p class="bodytext"><span class="property"><a id="h116257_2" class="popuponclicktemplate" href="javascript:void(0)" onclick="togglePopup('116257','h116257_2')" target="_self">Script: execute</a></span></p>
+<p class="bodytext">This function executes a selected script.</p>
+<p class="bodytext">More in the online help.</p>
+<p class="bodytext">&nbsp;</p>
+</div></td>
+<td width="38%"><p class="tablebodytext">Executes script to switch to Diagnosis view.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row2">
+<td width="25%"><p class="tablebodytext"><span class="property">CD_scrSwitch_popup_Diagnosis</span></p>
+</td>
+<td width="36%"><p class="tablebodytext"><span class="property"><a id="h115654" class="popuponclicktemplate" href="javascript:void(0)" onclick="togglePopup('115654','h115654')" target="_self">Screen switch</a></span></p>
+<div id="d115654" class="popuponclick" style="display:none"><a href="javascript:hidePopup('115654')"><img src="close.gif" align="right" alt="Close" border="0"></a>Internal ID: Additional content<p class="bodytext">&nbsp;</p>
+<p class="bodytext"><span class="property"><a id="h115654_2" class="popuponclicktemplate" href="javascript:void(0)" onclick="togglePopup('115654','h115654_2')" target="_self">Screen switch</a></span></p>
+<p class="bodytext">This function opens a selected screen. Optionally, a dialog for the user can be opened before that.</p>
+<p class="bodytext">More in the online help.</p>
+<p class="bodytext">&nbsp;</p>
+</div></td>
+<td width="38%"><p class="tablebodytext">Used in above script.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row1">
+<td width="25%"><p class="tablebodytext"><span class="property">CD_varWrite_Mode_Automatic</span></p>
+</td>
+<td width="36%"><p class="tablebodytext"><span class="property"><a id="h116383" class="popuponclicktemplate" href="javascript:void(0)" onclick="togglePopup('116383','h116383')" target="_self">Write/modify set value</a></span></p>
+<div id="d116383" class="popuponclick" style="display:none"><a href="javascript:hidePopup('116383')"><img src="close.gif" align="right" alt="Close" border="0"></a>Internal ID: Additional content<p class="bodytext">&nbsp;</p>
+<p class="bodytext"><span class="property"><a id="h116383_2" class="popuponclicktemplate" href="javascript:void(0)" onclick="togglePopup('116383','h116383_2')" target="_self">Write/modify set value</a></span></p>
+<p class="bodytext">This function sends a new value for a selected variable to the PLC.</p>
+<p class="bodytext">More in the online help.</p>
+<p class="bodytext">&nbsp;</p>
+</div></td>
+<td width="38%"><p class="tablebodytext">Sets the motor operation mode to automatic.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row2">
+<td width="25%"><p class="tablebodytext"><span class="property">CD_varWrite_Mode_Manual</span></p>
+</td>
+<td width="36%"><p class="tablebodytext"><span class="property"><a id="h116383_3" class="popuponclicktemplate" href="javascript:void(0)" onclick="togglePopup('116383','h116383_3')" target="_self">Write/modify set value</a></span></p>
+</td>
+<td width="38%"><p class="tablebodytext">Sets the motor operation mode to manual.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row1">
+<td width="25%"><p class="tablebodytext"><span class="property">CD_varWrite_Commandn_Start</span></p>
+</td>
+<td width="36%"><p class="tablebodytext"><span class="property"><a id="h116383_4" class="popuponclicktemplate" href="javascript:void(0)" onclick="togglePopup('116383','h116383_4')" target="_self">Write/modify set value</a></span></p>
+</td>
+<td width="38%"><p class="tablebodytext">Sets the variable <span class="donottranslate">Command</span> to 1 to start the motor.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row2">
+<td width="25%"><p class="tablebodytext"><span class="property">CD_varWrite_Commandn_Stop</span></p>
+</td>
+<td width="36%"><p class="tablebodytext"><span class="property"><a id="h116383_5" class="popuponclicktemplate" href="javascript:void(0)" onclick="togglePopup('116383','h116383_5')" target="_self">Write/modify set value</a></span></p>
+</td>
+<td width="38%"><p class="tablebodytext">Sets the variable <span class="donottranslate">Command</span> to 2 to stop the motor.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row1">
+<td width="25%"><p class="tablebodytext"><span class="property">CD_varWrite_Enable_Current</span></p>
+</td>
+<td width="36%"><p class="tablebodytext"><span class="property"><a id="h116383_6" class="popuponclicktemplate" href="javascript:void(0)" onclick="togglePopup('116383','h116383_6')" target="_self">Write/modify set value</a></span></p>
+</td>
+<td width="38%"><p class="tablebodytext">Toggles the variable <span class="donottranslate">Enable_Current </span>to enable/disable the current measurement.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row2">
+<td width="25%"><p class="bodytext"><span class="property">CD_varWrite_Enable_Power</span></p>
+</td>
+<td width="36%"><p class="tablebodytext"><span class="property"><a id="h116383_7" class="popuponclicktemplate" href="javascript:void(0)" onclick="togglePopup('116383','h116383_7')" target="_self">Write/modify set value</a></span></p>
+</td>
+<td width="38%"><p class="tablebodytext">Toggles the variable <span class="donottranslate">Enable_Power </span>to enable/disable the power measurement.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row1">
+<td width="25%"><p class="bodytext"><span class="property">CD_varWrite_Enable_Torque</span></p>
+</td>
+<td width="36%"><p class="tablebodytext"><span class="property"><a id="h116383_8" class="popuponclicktemplate" href="javascript:void(0)" onclick="togglePopup('116383','h116383_8')" target="_self">Write/modify set value</a></span></p>
+</td>
+<td width="38%"><p class="tablebodytext">Toggles the variable <span class="donottranslate">Enable_Torque </span>to enable/disable the torque measurement.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row2">
+<td width="25%"><p class="tablebodytext"><span class="property">CD_varWrite_Enable_Speed_Ramping</span></p>
+</td>
+<td width="36%"><p class="tablebodytext"><span class="property"><a id="h116383_9" class="popuponclicktemplate" href="javascript:void(0)" onclick="togglePopup('116383','h116383_9')" target="_self">Write/modify set value</a></span></p>
+</td>
+<td width="38%"><p class="tablebodytext">Toggles the variable <span class="donottranslate">Enable_Speed_Ramping </span>to enable/disable the speed setpoint ramping functionality.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row1">
+<td width="25%"><p class="tablebodytext"><span class="property">CD_varWrite_Enable_Simulation_Noise</span></p>
+</td>
+<td width="36%"><p class="tablebodytext"><span class="property"><a id="h116383_10" class="popuponclicktemplate" href="javascript:void(0)" onclick="togglePopup('116383','h116383_10')" target="_self">Write/modify set value</a></span></p>
+</td>
+<td width="38%"><p class="tablebodytext">Toggles the variable <span class="donottranslate">Simulation_Enable_Noise </span>to enable/disable the simulation of some noise to actual values.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row2">
+<td width="25%"><p class="tablebodytext"><span class="property">CD_varWrite_Speed_Current_Alarms</span></p>
+</td>
+<td width="36%"><p class="tablebodytext"><span class="property"><a id="h116383_11" class="popuponclicktemplate" href="javascript:void(0)" onclick="togglePopup('116383','h116383_11')" target="_self">Write/modify set value</a></span></p>
+</td>
+<td width="38%"><p class="tablebodytext">Toggles the variable <span class="donottranslate">Enable_Speed_Alarms </span>to enable/disable the speed deviation alarming.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row1">
+<td width="25%"><p class="tablebodytext"><span class="property">CD_varWrite_Enable_Current_Alarms</span></p>
+</td>
+<td width="36%"><p class="tablebodytext"><span class="property"><a id="h116383_12" class="popuponclicktemplate" href="javascript:void(0)" onclick="togglePopup('116383','h116383_12')" target="_self">Write/modify set value</a></span></p>
+</td>
+<td width="38%"><p class="tablebodytext">Toggles the variable <span class="donottranslate">Enable_Current_Alarms </span>to enable/disable the current alarming.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row2">
+<td width="25%"><p class="bodytext"><span class="property">CD_varWrite_Enable_Power_Alarms</span></p>
+</td>
+<td width="36%"><p class="tablebodytext"><span class="property"><a id="h116383_13" class="popuponclicktemplate" href="javascript:void(0)" onclick="togglePopup('116383','h116383_13')" target="_self">Write/modify set value</a></span></p>
+</td>
+<td width="38%"><p class="tablebodytext">Toggles the variable <span class="donottranslate">Enable_Power_Alarms </span>to enable/disable the power alarming.</p>
+</td>
+</tr>
+<tr align="left" valign="top" class="bgcol_row1">
+<td width="25%"><p class="tablebodytext"><span class="property">CD_varWrite_Enable_Torque_Alarms</span></p>
+</td>
+<td width="36%"><p class="tablebodytext"><span class="property"><a id="h116383_14" class="popuponclicktemplate" href="javascript:void(0)" onclick="togglePopup('116383','h116383_14')" target="_self">Write/modify set value</a></span></p>
+</td>
+<td width="38%"><p class="tablebodytext">Toggles the variable <span class="donottranslate">Enable_Torque_Alarms </span>to enable/disable the torque alarming.</p>
+</td>
+</tr>
+
+</table>
+
+<p class="sectionheading2">Nested smart objects</p>
+<table width="100%" border="0">
+<tr align="left" valign="top" class="bgcol_row0">
+<th width="25%"><p class="tablebodytext">SOT name</p>
+</th>
+<th width="36%"><p class="tablebodytext">Reference name</p>
+</th>
+<th width="38%"><p class="tablebodytext">Description</p>
+</th>
+</tr>
+<tr align="left" valign="top" class="bgcol_row1">
+<td width="25%"><p class="tablebodytext"><span class="property">Generic_Device</span></p>
+</td>
+<td width="36%"><p class="tablebodytext"><span class="propertyvalue/objectname">Generic</span></p>
+</td>
+<td width="38%"><p class="tablebodytext">Contains screen containers, navigation buttons and symbols. All what is the same for any device.</p>
+</td>
+</tr>
+
+</table>
+
+<p class="tablebodytext"></p>
+
+
+	
+
+</div>
+
+
+</body>
+</html>
